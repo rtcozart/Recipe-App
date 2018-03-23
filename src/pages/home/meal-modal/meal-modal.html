@@ -1,0 +1,59 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Meal Type</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list radio-group [(ngModel)]="checked">
+		<ion-item>
+			<ion-label>Any</ion-label>
+			<ion-radio value="" checked></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Appetizer</ion-label>
+			<ion-radio value="appetizer"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Salad</ion-label>
+			<ion-radio value="salad"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Bread</ion-label>
+			<ion-radio value="bread"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Soup</ion-label>
+			<ion-radio value="soup"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Main Course</ion-label>
+			<ion-radio value="main course"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Beverage</ion-label>
+			<ion-radio value="beverage"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Sauce</ion-label>
+			<ion-radio value="sauce"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Side Dish</ion-label>
+			<ion-radio value="side_dish"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Dessert</ion-label>
+			<ion-radio value="dessert"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Breakfast</ion-label>
+			<ion-radio value="breakfast"></ion-radio>
+		</ion-item>
+	</ion-list>
+	<br/>
+	<button ion-button full (click)="dismiss()">Done</button>
+</ion-content>

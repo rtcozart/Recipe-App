@@ -1,0 +1,104 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Cuisine</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list radio-group [(ngModel)]="checked">
+		<ion-item>	
+			<ion-label>Any</ion-label>
+			<ion-radio value="" checked></ion-radio>
+		</ion-item>
+		<ion-item>	
+			<ion-label>African</ion-label>
+			<ion-radio value="african"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Chinese</ion-label>
+			<ion-radio value="chinese"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Japanese</ion-label>
+			<ion-radio value="japanese"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Korean</ion-label>
+			<ion-radio value="korean"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Vietnamese</ion-label>
+			<ion-radio value="vietnamese"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Thai</ion-label>
+			<ion-radio value="thai"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Indian</ion-label>
+			<ion-radio value="indian"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>British</ion-label>
+			<ion-radio value="british"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>French</ion-label>
+			<ion-radio value="french"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Italian</ion-label>
+			<ion-radio value="italian"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Mexican</ion-label>
+			<ion-radio value="mexican"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Spanish</ion-label>
+			<ion-radio value="spanish"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Middle Eastern</ion-label>
+			<ion-radio value="middle eastern"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Jewish</ion-label>
+			<ion-radio value="jewish"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>American</ion-label>
+			<ion-radio value="american"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Cajun</ion-label>
+			<ion-radio value="cajun"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Southern</ion-label>
+			<ion-radio value="southern"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Greek</ion-label>
+			<ion-radio value="greek"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>German</ion-label>
+			<ion-radio value="german"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Eastern European</ion-label>
+			<ion-radio value="eastern european"></ion-radio>
+		</ion-item>
+	</ion-list>
+	
+	<br/>
+	<button ion-button full (click)="dismiss()">Done</button>
+</ion-content>
+
+<!--
+african, chinese, japanese, korean, vietnamese, thai, indian, british, irish, french, italian, mexican, spanish, middle eastern, jewish, american, cajun, southern, greek, german, nordic, eastern european, caribbean, or latin american
+-->

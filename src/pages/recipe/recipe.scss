@@ -1,0 +1,22 @@
+page-recipe {
+	table{
+		width: 100%;
+	}
+
+	td{
+		text-align: center;
+	}
+
+	ion-spinner{
+		width: 100%;
+		height: 250px;
+		color: primary;
+	}
+
+	ol>li{
+		margin: 10px 0;
+	}
+	ul>li{
+		margin: 5px 0;
+	}
+}

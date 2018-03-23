@@ -1,0 +1,35 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Preparation Method</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list radio-group [(ngModel)]="checked">
+		<ion-item>
+			<ion-label>Any</ion-label>
+			<ion-radio value="" checked></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Slow Cooker</ion-label>
+			<ion-radio value="slow cooker"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Oven</ion-label>
+			<ion-radio value="oven"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Stovetop</ion-label>
+			<ion-radio value="stovetop"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Grill</ion-label>
+			<ion-radio value="grilled"></ion-radio>
+		</ion-item>
+	</ion-list>
+	<br/>
+	<button ion-button full (click)="dismiss()">Done</button>
+</ion-content>

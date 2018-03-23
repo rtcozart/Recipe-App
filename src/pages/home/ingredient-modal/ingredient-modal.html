@@ -1,0 +1,63 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Main Ingredient</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list radio-group [(ngModel)]="checked">
+		<ion-item>	
+			<ion-label>Any</ion-label>
+			<ion-radio value="" checked></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Chicken</ion-label>
+			<ion-radio value="chicken"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Turkey</ion-label>
+			<ion-radio value="turkey"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Beef</ion-label>
+			<ion-radio value="beef"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Pork</ion-label>
+			<ion-radio value="pork"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Fish</ion-label>
+			<ion-radio value="fish"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Seafood</ion-label>
+			<ion-radio value="seafood"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Vegetables</ion-label>
+			<ion-radio value="vegetable"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Fruit</ion-label>
+			<ion-radio value="fruit"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Pasta</ion-label>
+			<ion-radio value="pasta"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Potatoes</ion-label>
+			<ion-radio value="potato"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Alcohol</ion-label>
+			<ion-radio value="alcohol"></ion-radio>
+		</ion-item>
+	</ion-list>
+	<br/>
+	<button ion-button full (click)="dismiss()">Done</button>
+</ion-content>

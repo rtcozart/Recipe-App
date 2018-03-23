@@ -1,0 +1,69 @@
+<!--
+  Generated template for the Recipe page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Recipe</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-fab bottom right>
+<button color="danger" ion-fab *ngIf="favID!=null" (click)="removeFromFavorites()">
+  <ion-icon name="remove"></ion-icon>
+</button>
+<button ion-fab *ngIf="!isFavorite" (click)="addToFavorites()">
+  <ion-icon name="star"></ion-icon>
+</button>
+
+</ion-fab>
+
+<ion-content padding id="Recipe" overflow-scroll="true">
+<ion-spinner *ngIf="!imageLoaded" name="ios-small"></ion-spinner>
+  <img *ngIf="imageLoaded" src="{{image}}"/>
+  <h1>{{title}}</h1>
+
+  <div class="rating">
+    <ion-icon name={{star}} *ngFor="let star of stars"></ion-icon>
+  </div>
+  <span *ngIf="showPoints">Weight Watchers SmartPoints: {{smartpoints}}</span>
+  <hr/>
+  <table>
+    <tr>
+      <th>
+        Prep Time
+      </th>
+      <th>
+        Cook Time
+      </th>
+      <th>
+       Servings
+     </th>
+   </tr>
+   <tr>
+    <td>
+      {{prepTime}}
+    </td>
+    <td>
+      {{cookTime}}
+    </td>
+    <td>
+      {{servings}}
+    </td>
+  </tr>
+</table>
+<hr/>
+<h2>Ingredients</h2>
+<ul>
+  <li *ngFor="let ingredient of ingredients">{{ingredient}}</li>
+</ul>
+<h2>Directions</h2>
+
+<ol>
+  <li *ngFor="let instruction of instructions">{{instruction}}</li>
+</ol>
+</ion-content>
