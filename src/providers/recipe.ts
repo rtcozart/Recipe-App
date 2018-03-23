@@ -3,7 +3,8 @@ import { Http, Headers, Request, RequestOptions, RequestOptionsArgs, URLSearchPa
 import { Storage } from '@ionic/storage';
 
 const HEADERS={
-	'X-Mashape-Key': 'W18xFjLPcEmshSP8ONoBAAhHGgMGp11aUG9jsnV7ucZretCcFz'
+	//no longer have access to API
+	'X-Mashape-Key': ''
 };
 
 const URL='https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/random';
